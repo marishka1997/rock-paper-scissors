@@ -1,0 +1,19 @@
+@font-face {
+  font-family: IndieFlower-Regular;
+  src: url("../../assets/fonts/IndieFlower-Regular.ttf") format("truetype");
+}
+
+.rules {
+  border-radius: 10%;
+  width: 30%;
+}
+
+.rules-block {
+  list-style-type: none;
+}
+ul {
+  margin-left: 0;
+  padding-left: 0;
+  font-family: 'Indie Flower', cursive;
+  font-size: 20px;
+}
