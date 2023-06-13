@@ -1,0 +1,10 @@
+@font-face {
+  font-family: ShadowIntoLight-Regular;
+  src: url("../../assets/fonts/ShadowsIntoLight-Regular.ttf") format("truetype");
+}
+
+span,
+ul li {
+  font-family: 'ShadowIntoLight-Regular', sans-serif;
+  font-size: 18px;
+}
