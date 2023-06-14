@@ -14,6 +14,7 @@ export class PlaygroundComponent implements OnInit {
   winner: string = '';
   message: string = '';
   weapons = WEAPONSLIST;
+  playerScore: number = 0;
   @Output()
   propagate = new EventEmitter<string>();
 
