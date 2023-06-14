@@ -11,6 +11,8 @@ The purpose of the game is to defeat your opponent by selecting one of the three
 - CSS 
 - Angular 16
 - TypeScript
+- Bootstrap
+- Angular/Material
 
 ## Development server
 Run `npm install` for installation and then `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.

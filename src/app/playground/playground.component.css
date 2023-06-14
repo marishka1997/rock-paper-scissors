@@ -3,6 +3,10 @@
   src: url("../../assets/fonts/Amatic-Regular.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: ShadowIntoLight-Regular;
+  src: url("../../assets/fonts/ShadowsIntoLight-Regular.ttf") format("truetype");
+}
 .hands {
   margin-top: auto;
   margin-bottom: 50px;
@@ -81,4 +85,9 @@ p {
   font-family: 'Amatic-Regular', cursive;
   text-align: center;
   color: rgb(0, 10, 104);
+}
+
+button {
+  font-family: 'ShadowIntoLight-Regular', sans-serif;
+  font-size: 20px;
 }

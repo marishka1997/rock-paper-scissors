@@ -36,8 +36,8 @@ export class PlaygroundComponent implements OnInit {
   }
 
   makeChoice(playerChoice: number): void {
-    this.playerRPS = null;
-    this.computerRPS = null;
+    this.playerRPS = 0;
+    this.computerRPS = 0;
     setTimeout(() =>
     {
       this.playerRPS = playerChoice;
