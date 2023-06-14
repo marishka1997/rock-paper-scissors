@@ -18,6 +18,9 @@ export class PlaygroundComponent implements OnInit {
   @Output()
   propagate = new EventEmitter<string>();
 
+  @Output()
+  restartGame = new EventEmitter();
+
   ngOnInit(): void {
   }
 
@@ -67,5 +70,6 @@ export class PlaygroundComponent implements OnInit {
     this.result = 0;
     this.winner = '';
     this.message = '';
+    this.restartGame.emit();
   }
 }

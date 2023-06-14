@@ -25,4 +25,9 @@ export class GameComponent implements OnInit{
       this.childTwo.incrementScore();
     }
   }
+
+  restartGame() {
+    this.childOne.count = 0;
+    this.childTwo.count = 0;
+  }
 }
