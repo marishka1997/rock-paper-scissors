@@ -1,0 +1,50 @@
+<div class="row">
+  <p class="font" *ngIf="computerRPS != null">{{message}}</p>
+  <p class="font" *ngIf="computerRPS == null">CHOOSE A WEAPON...</p>
+</div>
+
+<div class="row row-cols-3 mb-5">
+  <div class="col">
+    <div class="card align-items-end">
+      <img *ngIf="computerRPS == null" (click)="makeChoice(0)" class="image-choice first-choice" type="button"
+        src="/assets/images/paper.png">
+      <img *ngIf="computerRPS != null" (click)="makeChoice(0)" class="image-choice following-choices" type="button"
+        src="/assets/images/paper.png">
+    </div>
+  </div>
+  <div class="col">
+    <div class="card align-items-center">
+      <img *ngIf="computerRPS == null" (click)="makeChoice(1)" class="image-choice first-choice" type="button"
+        src="/assets/images/rock.png">
+      <img *ngIf="computerRPS != null" (click)="makeChoice(1)" class="image-choice following-choices" type="button"
+        src="/assets/images/rock.png">
+    </div>
+  </div>
+  <div class="col">
+    <div class="card align-items-start">
+      <img *ngIf="computerRPS == null" (click)="makeChoice(2)" class="image-choice first-choice" type="button"
+        src="/assets/images/scissors.png">
+      <img *ngIf="computerRPS != null" (click)="makeChoice(2)" class="image-choice following-choices" type="button"
+        src="/assets/images/scissors.png">
+    </div>
+  </div>
+</div>
+
+<div class="row row-cols-2 ">
+  <div class="hands col-6 col-sm-6 col-md-6 mx-auto">
+    <div class="card align-items-center" *ngFor="let weapon of weapons">
+      <img class="image" *ngIf="playerRPS == weapon.value" src="/assets/images/{{weapon.image}}.png">
+    </div>
+  </div>
+  <div class="hands col-6 col-sm-6 col-md-6 mx-auto">
+    <div class="card align-items-center" *ngFor="let weapon of weapons">
+      <img class="image" *ngIf="computerRPS == weapon.value" src="/assets/images/{{weapon.image}}.png">
+    </div>
+  </div>
+</div>
+<div class="row justify-content-center">
+  <div class="col-6 text-center">
+    <button *ngIf="gameOver" (click)="resetGame()" class="btn btn-danger">Play Again</button>
+  </div>
+</div>
+

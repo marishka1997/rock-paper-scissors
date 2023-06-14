@@ -9,13 +9,17 @@ import { HeaderComponent } from './header/header.component';
 import { GameComponent } from './game/game.component';
 import { RulesComponent } from './rules/rules.component';
 import { FooterComponent } from './footer/footer.component';
+import { PlaygroundComponent } from './playground/playground.component';
+import { ScoreComponent } from './score/score.component';
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     GameComponent,
     RulesComponent,
-    FooterComponent
+    FooterComponent,
+    PlaygroundComponent,
+    ScoreComponent
   ],
   imports: [
     BrowserModule,
