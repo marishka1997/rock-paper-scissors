@@ -14,7 +14,6 @@ export class PlaygroundComponent implements OnInit {
   winner: string = '';
   message: string = '';
   weapons = WEAPONSLIST;
-  gameOver: boolean = false;
   @Output()
   propagate = new EventEmitter<string>();
 
@@ -26,7 +25,6 @@ export class PlaygroundComponent implements OnInit {
     this.winner = this.calculateResult(this.playerRPS, this.computerRPS);
     this.message = this.showResult(this.winner);
     this.propagate.emit(this.winner);
-    this.gameOver = true;
   }
 
   showResult(winner: string): string {
@@ -38,7 +36,6 @@ export class PlaygroundComponent implements OnInit {
   }
 
   makeChoice(playerChoice: number): void {
-    if (this.gameOver) return;
     this.playerRPS = null;
     this.computerRPS = null;
     setTimeout(() =>
@@ -69,6 +66,5 @@ export class PlaygroundComponent implements OnInit {
     this.result = 0;
     this.winner = '';
     this.message = '';
-    this.gameOver = false;
   }
 }
